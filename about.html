@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Music-ISM | Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">    
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="introduction.html">INTRODUCTION</a></li>
+                        <li><a href="iman.html">IMAN</a></li>
+                        <li><a href="stanley.html">STANLEY</a></li>
+                        <li><a href="marcel.html">MARCEL</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <h1>About Us</h1>
+
+        </section>
+
+
+<!-- introduction content -->
+
+<section class="introduction">
+
+    <div class="row">
+        <div class="introduction-col">
+            <h1>MUSIC-ISM | About Us</h1>
+            <p>Kami para mahasiswa yang sedang menempuh rangkaian kegiatan MBKM, yang sedang
+                mengerjakan perancangan "Desain Website" yang bertemakan musik. Kami juga 
+                menyukai berbagai macam musik dan banyak diantaranya menjadi favorit kami.
+            </p>
+            <!-- <a href="" class="hero-btn black-btn">Cari Tahu Lebih Dalam</a> -->
+        </div>
+        <div class="introduction-col">
+            <img src="images/tentangkami.jpg">
+        </div>
+    </div>
+
+
+</section>
+
+
+
+
+<!-- footer -->
+
+<section class="footer">
+
+    <h4>About Us</h4>
+    <p>Ketiga orang yang suka musik tetapi musik yang mereka sukai bermacam-macam</p>
+    <!-- <div class="icons">
+        <i class="fa fa-facebook"></i>
+    </div> -->
+    <p>Music-ISM | Website Design - 2023</p>
+
+</section>
+
+
+
+
+<!------JavaScript for Toggle Menu------->    
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+    </body>
+</html>
